@@ -20,7 +20,7 @@ const SideBar = () => {
           <Link to="/chart">チャート</Link>
         </li>
         <li>
-          <Link to="/orders">注文リスト</Link>
+        <Link to="/orders">注文管理</Link>
         </li>
         <li>
           <Link to="/logout">ログアウト</Link>
