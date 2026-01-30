@@ -4,6 +4,7 @@ import Home from './pages/home'
 import Chart from './pages/chart'
 import NotFound from './pages/notfound'
 import Customer from './pages/customer'
+import Orders from './pages/orders'
 
 
 const App = () => {
@@ -35,20 +36,21 @@ const App = () => {
   
   return (
     <>
-    <h1>データを表示する方法</h1>
+    {/* <h1>データを表示する方法</h1>
     {data.map((item) => (
       <div>
         <p>{item.id}</p>
         <p>{item.title}</p>
         <p>{item.userId}</p>
       </div>
-    ))}
+    ))} */}
 
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/chart" element={<Chart />} />
         <Route path="/customer" element={<Customer />} />
+        <Route path="/orders" element={<Orders />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
